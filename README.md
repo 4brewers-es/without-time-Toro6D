@@ -1,41 +1,57 @@
 # WITHOUT-TIME: The TORO6 Cosmological Framework
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status: Theoretical](https://img.shields.io/badge/Status-Theoretical_Alpha-blue.svg)](https://gitlab.com)
-[![Framework: 9D-Manifold](https://img.shields.io/badge/Topology-9D_Riemannian_Torus-purple.svg)](https://gitlab.com)
+[![License: Dual](https://img.shields.io/badge/License-Dual_MIT_&_CC--BY--4.0-yellow.svg)](#-license)
+[![Status: Theoretical Candidate](https://img.shields.io/badge/Status-Theoretical_Candidate-blue.svg)](https://github.com/4brewers-es/without-time-Toro6D)
+[![Framework: 9D-Manifold](https://img.shields.io/badge/Topology-9D_Riemannian_Torus-purple.svg)](https://github.com/4brewers-es/without-time-Toro6D)
+[![Build: Passing](https://img.shields.io/badge/Simulation-Python_3.10+-green.svg)](https://github.com/4brewers-es/without-time-Toro6D)
 
 ## 🌌 Abstract
 
-**WITHOUT-TIME (TORO6)** is a first-principles cosmological framework proposing that the universe is a 6-dimensional Entropic Torus embedded in a 9-dimensional manifold. In this model, **Time ($t$) is not fundamental** but an emergent property of the entropy gradient ($\nabla S$).
+**WITHOUT-TIME (TORO6)** is a first-principles cosmological framework proposing that the universe is a 6-dimensional Entropic Torus embedded in a 9-dimensional manifold. In this model, **Time ($t$) is not fundamental** but an emergent property of the entropy gradient ($\nabla S$) diagonalized along the 6th dimension.
 
-This repository hosts the mathematical proofs, Python simulations, and topological visualizations demonstrating that observable reality (Standard Model + General Relativity) emerges as a stable "Caustic" intersection at a critical resonance angle of **33º**.
+Crucially, this framework derives the **Fine Structure Constant ($\alpha$)** and the existence of Electromagnetism not as arbitrary values, but as the geometric "Existence Gap" between the entropic tension of the manifold ($e/5$) and the stability threshold of the wave function ($2/\pi$).
 
 ---
 
-## 🧠 Core Theory: The Grand Unification
+## 🧠 The First Principles: Deriving Reality
 
-Unlike standard models that try to bridge Gravity and Quantum Mechanics directly, TORO6 posits they are emergent phenomena from a higher-order topology.
+Standard physics requires 26+ constants to be "fine-tuned." TORO6 derives them from topology.
 
-### 1. The Topology (9D Manifold)
-The metric tensor describes 3 extended spatial dimensions and 6 compact entropic dimensions:
-$$ds^2_9 = g_{(3)}(x) + \sum_{i=1}^6 R^2_i(\theta) d\theta^2$$
+### 1. The Structural Foundation ($e/5$)
+The manifold has 6 compact dimensions. Since $\theta^6$ drives the time-flow, the structural tension is distributed over the remaining **5 spatial degrees of freedom**. Following Euler's growth constant ($e$):
+$$\Gamma_{base} = \frac{e}{5} \approx 0.54365$$
 
-### 2. The Mechanism: Lemniscate Bifurcation
-Reality is not a "container", but a **standing wave** formed at the geometric "neck" of the Torus. This intersection creates a **Bernoulli Lemniscate** ($\infty$) shape, geometrically validating the CPT-Symmetric Mirror Universe hypothesis.
+### 2. The Stability Threshold ($2/\pi$)
+For any wave function to maintain coherence (baryonic stability) and avoid entropic decoherence, its amplitude must exceed the mean rectified limit:
+$$\delta_{critical} = \frac{2}{\pi} \approx 0.63662$$
+
+### 3. The Existence Gap = Light ($\alpha$)
+The universe exists in the "gap" between these two values. The energy required to bridge the gap from Chaos ($\Gamma$) to Order ($\delta$) creates a tension field we perceive as **Electromagnetism**.
+$$\Delta_{Gap} = \frac{2}{\pi} - \frac{e}{5} \approx 0.0929$$
+Comparing this to the geometry of light ($4\pi \alpha$):
+$$4\pi \alpha \approx 0.0917$$
+*The <1.3% deviation is explained by "Osmotic Leakage" to a neighboring Torus (see Dark Energy section).*
+
+---
+
+## ♾️ Topology: The Lemniscate Bifurcation
+
+Reality is a "Caustic" or standing wave formed at the geometric intersection where the entropic flow achieves the critical **33º Resonance Angle**. This intersection naturally forms a **Bernoulli Lemniscate** ($\infty$), validating the CPT-Symmetric Mirror Universe hypothesis.
 
 ```mermaid
 graph TD
     subgraph "9D Hyperspace (Entropic Source)"
-    E[Entropy Flux] -->|Flows over Torus| B{Bifurcation Point}
+    E[Entropy Flux (e/5)] -->|Flows over Torus| B{Stability Threshold (2/pi)}
     end
 
-    B -->|Angle != 33º| C[Decoherence / Dark Matter Halo]
-    B -->|Angle = 33º| L((Critical Lemniscate))
+    B -->|Gap not Bridged| C[Dark Matter Halo / Decoherence]
+    B -->|Resonance at 33º| L((Critical Lemniscate))
 
     subgraph "Emergent Reality (The Mirror System)"
-    L -->|Loop A| U1[Universe A: Matter dominated]
-    L -->|Loop B| U2[Universe B: Antimatter / Time-Reversed]
+    L -->|Loop A (+Entropy)| U1[Universe A: Matter / Forward Time]
+    L -->|Loop B (-Entropy)| U2[Universe B: Antimatter / Reverse Time]
     end
 
     style L fill:#f9f,stroke:#333,stroke-width:4px
     style C fill:#333,stroke:#fff,color:#fff
+    style B fill:#ff9,stroke:#333
