@@ -41,17 +41,18 @@ Reality is a "Caustic" or standing wave formed at the geometric intersection whe
 ```mermaid
 graph TD
     subgraph "9D Hyperspace (Entropic Source)"
-    E[Entropy Flux (e/5)] -->|Flows over Torus| B{Stability Threshold (2/pi)}
+    E["Entropy Flux (e/5)"] -->|Flows over Torus| B{"Stability Threshold (2/pi)"}
     end
 
-    B -->|Gap not Bridged| C[Dark Matter Halo / Decoherence]
-    B -->|Resonance at 33º| L((Critical Lemniscate))
+    B -->|Angle != 33º| C["Dark Matter Halo / Decoherence"]
+    B -->|Angle = 33º| L(("Critical Lemniscate"))
 
     subgraph "Emergent Reality (The Mirror System)"
-    L -->|Loop A (+Entropy)| U1[Universe A: Matter / Forward Time]
-    L -->|Loop B (-Entropy)| U2[Universe B: Antimatter / Reverse Time]
+    L -->|Loop A| U1["Universe A: Matter / Forward Time"]
+    L -->|Loop B| U2["Universe B: Antimatter / Reverse Time"]
     end
 
     style L fill:#f9f,stroke:#333,stroke-width:4px
     style C fill:#333,stroke:#fff,color:#fff
     style B fill:#ff9,stroke:#333
+
